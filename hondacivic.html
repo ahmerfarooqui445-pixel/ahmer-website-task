@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Civic | DRIVEON</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .civic-page {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .civic-banner {
+            background: #102c49;
+            color: white;
+            padding: 65px 30px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .civic-banner h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .civic-image {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .civic-page h2 {
+            color: #102c49;
+            margin: 30px 0 15px;
+        }
+
+        .civic-page p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .civic-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .civic-box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .civic-box strong {
+            display: block;
+            color: #102c49;
+            margin-top: 8px;
+        }
+
+        .civic-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .feature {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .civic-price {
+            background: #102c49;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .civic-price h2 {
+            color: white;
+            margin: 5px;
+        }
+
+        .civic-button {
+            display: inline-block;
+            background: #e87917;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 650px) {
+            .civic-details,
+            .civic-features {
+                grid-template-columns: 1fr;
+            }
+
+            .civic-banner h1 {
+                font-size: 30px;
+            }
+
+            .civic-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header"></header>
+
+<div class="civic-page">
+
+    <section class="civic-banner">
+        <h1>HONDA CIVIC</h1>
+        <p>Experience Comfort, Style and Performance</p>
+    </section>
+
+    <img
+        class="civic-image"
+        src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200"
+        alt="Honda Civic style sedan"
+    >
+
+    <section>
+        <h2>About Honda Civic</h2>
+
+        <p>
+            Honda Civic is a stylish and modern sedan designed for people
+            who enjoy comfort and performance. It offers an attractive
+            exterior, spacious interior and smooth driving experience.
+            It is suitable for family trips, business meetings and daily
+            travelling.
+        </p>
+    </section>
+
+    <section>
+        <h2>Engine & Performance</h2>
+
+        <p>
+            Honda Civic provides a balanced driving experience with
+            responsive performance and comfortable handling. Its engine
+            and transmission options depend on the selected model.
+            It is designed for both city roads and long-distance journeys.
+        </p>
+    </section>
+
+    <section>
+        <h2>Car Specifications</h2>
+
+        <div class="civic-details">
+
+            <div class="civic-box">
+                Engine
+                <strong>Model Dependent</strong>
+            </div>
+
+            <div class="civic-box">
+                Transmission
+                <strong>Automatic / Manual</strong>
+            </div>
+
+            <div class="civic-box">
+                Fuel Type
+                <strong>Petrol</strong>
+            </div>
+
+            <div class="civic-box">
+                Seating Capacity
+                <strong>5 Persons</strong>
+            </div>
+
+            <div class="civic-box">
+                Car Category
+                <strong>Sedan</strong>
+            </div>
+
+            <div class="civic-box">
+                Air Conditioning
+                <strong>Available</strong>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Premium Features</h2>
+
+        <div class="civic-features">
+
+            <div class="feature">
+                <h3>Modern Interior</h3>
+                <p>Comfortable seats and stylish cabin design.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Smart Technology</h3>
+                <p>Modern infotainment and useful driving technology.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Safety Features</h3>
+                <p>Designed with modern safety and driver assistance features.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Smooth Driving</h3>
+                <p>Comfortable handling for city and highway journeys.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="civic-price">
+        <p>Rental Price</p>
+        <h2>Rs. 12,000 / Day</h2>
+
+        <a href="booking.html?car=2" class="civic-button">
+            Book Honda Civic
+        </a>
+    </section>
+
+</div>
+
+<footer id="footer"></footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

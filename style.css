@@ -1,0 +1,399 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fa;
+    color: #17243a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: #101d32;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff8b28;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    font-size: 13px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ff8b28;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff8b28;
+    color: white;
+    border: none;
+    padding: 12px 23px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #e56f10;
+    transform: translateY(-2px);
+}
+
+.hero {
+    min-height: 580px;
+    background:
+    linear-gradient(90deg, rgba(10,20,37,.92), rgba(10,20,37,.2)),
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85')
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.hero-content small {
+    color: #ff8b28;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 66px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #eeeeee;
+}
+
+.section {
+    padding: 75px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading span {
+    color: #ff8b28;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #777;
+}
+
+.search-section {
+    width: 88%;
+    margin: -40px auto 0;
+    position: relative;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px #00000015;
+}
+
+.search-section form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: end;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #0000000d;
+    transition: .3s;
+}
+
+.car-card:hover {
+    transform: translateY(-6px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.car-info {
+    padding: 22px;
+}
+
+.car-info h3 {
+    margin-bottom: 10px;
+}
+
+.car-info p {
+    color: #777;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.car-info h4 {
+    color: #ff8b28;
+    margin-bottom: 17px;
+}
+
+.why-us {
+    padding: 65px 7%;
+    background: #101d32;
+    color: white;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.feature-grid,
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.feature-grid div {
+    padding: 25px;
+    border: 1px solid #45516a;
+    border-radius: 10px;
+}
+
+.feature-grid p {
+    color: #ddd;
+    margin-top: 12px;
+    line-height: 1.7;
+}
+
+.page-banner {
+    background: #101d32;
+    color: white;
+    text-align: center;
+    padding: 75px 15px;
+}
+
+.page-banner h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.page-banner p {
+    color: #ddd;
+}
+
+.content {
+    max-width: 1150px;
+    margin: auto;
+    padding: 60px 25px;
+    line-height: 1.8;
+}
+
+.content h2 {
+    margin: 25px 0 15px;
+}
+
+.content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    background: white;
+    padding: 23px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px #0000000d;
+    overflow: hidden;
+}
+
+.info-box h3 {
+    color: #ff8b28;
+    margin: 12px 0;
+}
+
+.info-box img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.form-box {
+    max-width: 700px;
+    background: white;
+    margin: 50px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px #0000000d;
+}
+
+.form-box h2 {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-box .btn {
+    width: 100%;
+}
+
+.faq-item {
+    background: white;
+    padding: 22px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    color: #ff8b28;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #101d32;
+    color: white;
+    padding: 35px 15px;
+    text-align: center;
+}
+
+footer p {
+    color: #ccc;
+    margin-top: 12px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 18px;
+}
+
+.footer-links a:hover {
+    color: #ff8b28;
+}
+
+@media(max-width: 900px) {
+    .car-grid,
+    .feature-grid,
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-section form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .car-grid,
+    .feature-grid,
+    .info-grid,
+    .search-section form {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 470px;
+        padding: 40px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .page-banner h1 {
+        font-size: 30px;
+    }
+
+    .search-section {
+        width: 94%;
+    }
+}

@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium SUV | DRIVEON</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .suv-page {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .suv-banner {
+            background: #102c49;
+            color: white;
+            text-align: center;
+            padding: 65px 25px;
+            border-radius: 12px;
+        }
+
+        .suv-banner h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .suv-image {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .suv-page h2 {
+            color: #102c49;
+            margin: 30px 0 15px;
+        }
+
+        .suv-page p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .suv-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .suv-box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .suv-box strong {
+            display: block;
+            color: #102c49;
+            margin-top: 8px;
+        }
+
+        .suv-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .feature {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .suv-price {
+            background: #102c49;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .suv-price h2 {
+            color: white;
+            margin: 5px;
+        }
+
+        .suv-button {
+            display: inline-block;
+            background: #e87917;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 650px) {
+            .suv-details,
+            .suv-features {
+                grid-template-columns: 1fr;
+            }
+
+            .suv-banner h1 {
+                font-size: 30px;
+            }
+
+            .suv-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header"></header>
+
+<div class="suv-page">
+
+    <section class="suv-banner">
+        <h1>PREMIUM SUV</h1>
+        <p>Luxury, Space and Power for Every Journey</p>
+    </section>
+
+    <img
+        class="suv-image"
+        src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=1200"
+        alt="Premium SUV vehicle"
+    >
+
+    <section>
+        <h2>About Premium SUV</h2>
+
+        <p>
+            A Premium SUV combines luxury, comfort and powerful performance
+            in one vehicle. It offers a spacious cabin, elevated seating
+            position and modern exterior design. Premium SUVs are suitable
+            for family trips, long journeys and business travel.
+        </p>
+    </section>
+
+    <section>
+        <h2>Performance & Driving</h2>
+
+        <p>
+            Premium SUVs are designed to provide a smooth and confident
+            driving experience. Their powerful engines and comfortable
+            suspension make travelling enjoyable on city roads and highways.
+            Some models also offer advanced driving assistance technology.
+        </p>
+    </section>
+
+    <section>
+        <h2>Vehicle Specifications</h2>
+
+        <div class="suv-details">
+
+            <div class="suv-box">
+                Engine
+                <strong>Model Dependent</strong>
+            </div>
+
+            <div class="suv-box">
+                Transmission
+                <strong>Automatic</strong>
+            </div>
+
+            <div class="suv-box">
+                Fuel Type
+                <strong>Petrol / Diesel</strong>
+            </div>
+
+            <div class="suv-box">
+                Seating Capacity
+                <strong>5–7 Persons</strong>
+            </div>
+
+            <div class="suv-box">
+                Vehicle Type
+                <strong>Luxury SUV</strong>
+            </div>
+
+            <div class="suv-box">
+                Air Conditioning
+                <strong>Available</strong>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Premium Features</h2>
+
+        <div class="suv-features">
+
+            <div class="feature">
+                <h3>Luxury Interior</h3>
+                <p>Spacious seating with a comfortable and premium cabin.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Powerful Performance</h3>
+                <p>Designed for smooth driving and confident handling.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Advanced Technology</h3>
+                <p>Modern entertainment and convenient driving features.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Extra Space</h3>
+                <p>More room for passengers and luggage.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="suv-price">
+        <p>Rental Price</p>
+        <h2>Rs. 18,000 / Day</h2>
+
+        <a href="booking.html" class="suv-button">
+            Book Premium SUV
+        </a>
+    </section>
+
+</div>
+
+<footer id="footer"></footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

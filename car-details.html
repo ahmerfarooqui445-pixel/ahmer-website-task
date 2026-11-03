@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Corolla | DRIVEON</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .corolla-page {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .corolla-banner {
+            background: #102c49;
+            color: white;
+            text-align: center;
+            padding: 65px 25px;
+            border-radius: 12px;
+        }
+
+        .corolla-banner h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .corolla-image {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .corolla-page h2 {
+            color: #102c49;
+            margin: 30px 0 15px;
+        }
+
+        .corolla-page p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .corolla-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .corolla-box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .corolla-box strong {
+            display: block;
+            color: #102c49;
+            margin-top: 8px;
+        }
+
+        .corolla-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .feature {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .corolla-price {
+            background: #102c49;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .corolla-price h2 {
+            color: white;
+            margin: 5px;
+        }
+
+        .corolla-button {
+            display: inline-block;
+            background: #e87917;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 650px) {
+            .corolla-details,
+            .corolla-features {
+                grid-template-columns: 1fr;
+            }
+
+            .corolla-banner h1 {
+                font-size: 30px;
+            }
+
+            .corolla-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header"></header>
+
+<div class="corolla-page">
+
+    <section class="corolla-banner">
+        <h1>TOYOTA COROLLA</h1>
+        <p>Comfort, Reliability and Everyday Performance</p>
+    </section>
+
+    <img
+        class="corolla-image"
+        src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=1200"
+        alt="Toyota Corolla style sedan"
+    >
+
+    <section>
+        <h2>About Toyota Corolla</h2>
+
+        <p>
+            Toyota Corolla is one of the most popular sedan cars in the
+            world. It is known for its reliability, comfortable interior
+            and practical design. The car is suitable for daily travelling,
+            family trips and business journeys. Its stylish appearance
+            and smooth driving experience make it a popular choice.
+        </p>
+    </section>
+
+    <section>
+        <h2>Engine & Performance</h2>
+
+        <p>
+            Toyota Corolla offers dependable performance and comfortable
+            handling. Its engine options are designed for everyday driving
+            and balanced fuel efficiency. Depending on the model, it may
+            come with manual or automatic transmission.
+        </p>
+    </section>
+
+    <section>
+        <h2>Car Specifications</h2>
+
+        <div class="corolla-details">
+
+            <div class="corolla-box">
+                Engine
+                <strong>Model Dependent</strong>
+            </div>
+
+            <div class="corolla-box">
+                Transmission
+                <strong>Automatic / Manual</strong>
+            </div>
+
+            <div class="corolla-box">
+                Fuel Type
+                <strong>Petrol / Hybrid (model dependent)</strong>
+            </div>
+
+            <div class="corolla-box">
+                Seating Capacity
+                <strong>5 Persons</strong>
+            </div>
+
+            <div class="corolla-box">
+                Car Category
+                <strong>Sedan</strong>
+            </div>
+
+            <div class="corolla-box">
+                Air Conditioning
+                <strong>Available</strong>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Premium Features</h2>
+
+        <div class="corolla-features">
+
+            <div class="feature">
+                <h3>Comfortable Interior</h3>
+                <p>Spacious seating and a practical cabin design.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Fuel Efficiency</h3>
+                <p>Designed to provide balanced everyday fuel consumption.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Modern Design</h3>
+                <p>Attractive exterior styling with a clean appearance.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Reliable Performance</h3>
+                <p>Comfortable handling for city and highway journeys.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="corolla-price">
+        <p>Rental Price</p>
+        <h2>Rs. 8,500 / Day</h2>
+
+        <a href="booking.html?car=1" class="corolla-button">
+            Book Toyota Corolla
+        </a>
+    </section>
+
+</div>
+
+<footer id="footer"></footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
